@@ -1,9 +1,8 @@
 package main
 
 func main() {
-	sum := 5 + 6 + 3
-	var avg float64 = float64(sum) / 3
-	if avg > 4.5 {
-		println("good")
-	}
+	n := []int{19, 86, 1, 12}
+
+	sum := n[0] + n[1] + n[2] + n[3]
+	println(sum)
 }

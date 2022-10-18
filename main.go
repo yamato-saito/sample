@@ -3,7 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	//var price int
+	var n int = 100
+	const m int = 200
 	fmt.Print("値段>")
-	fmt.Printf("%d円\n", 2)
+	fmt.Printf("%d円%d円引き\n", n, m)
 }

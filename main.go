@@ -1,8 +1,21 @@
 package main
 
-func main() {
-	n := []int{19, 86, 1, 12}
+func judge(n int) (x bool) {
+	if n%2 == 0 {
+		x = true
+	} else {
+		x = false
+	}
+	return
+}
 
-	sum := n[0] + n[1] + n[2] + n[3]
-	println(sum)
+func main() {
+	for i := 1; i <= 100; i++ {
+		print(i)
+		if judge(i) {
+			println("-偶数")
+		} else {
+			println("-奇数")
+		}
+	}
 }

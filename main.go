@@ -1,13 +1,11 @@
 package main
 
-func swap2(x, y *int) {
+type MyInt int
 
-	*x, *y = *y, *x
-
-}
-
+func (m *MyInt) Inc() { *m += 1 }
 func main() {
-	n, m := 10, 20
-	swap2(&n, &m)
-	println(n, m)
+	var n MyInt = 0
+	println(n)
+	n.Inc()
+	println(n)
 }

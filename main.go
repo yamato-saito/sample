@@ -1,12 +1,13 @@
 package main
 
-func swap(x, y int) (x2, y2 int) {
+func swap2(x, y *int) {
 
-	x2, y2 = y, x
-	return
+	*x, *y = *y, *x
+
 }
 
 func main() {
-	n, m := swap(10, 20)
+	n, m := 10, 20
+	swap2(&n, &m)
 	println(n, m)
 }

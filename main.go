@@ -1,21 +1,12 @@
 package main
 
-func judge(n int) (x bool) {
-	if n%2 == 0 {
-		x = true
-	} else {
-		x = false
-	}
+func swap(x, y int) (x2, y2 int) {
+
+	x2, y2 = y, x
 	return
 }
 
 func main() {
-	for i := 1; i <= 100; i++ {
-		print(i)
-		if judge(i) {
-			println("-偶数")
-		} else {
-			println("-奇数")
-		}
-	}
+	n, m := swap(10, 20)
+	println(n, m)
 }

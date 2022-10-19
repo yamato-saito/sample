@@ -10,5 +10,5 @@ type MyInt int
 
 func main() {
 
-	fmt.Println(greeting.Num)
+	fmt.Println(greeting.Do())
 }

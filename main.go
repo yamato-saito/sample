@@ -2,13 +2,11 @@ package main
 
 import (
 	"fmt"
-
-	"mysite/greeting"
+	"os"
 )
-
-type MyInt int
 
 func main() {
 
-	fmt.Println(greeting.Do())
+	fmt.Println(os.Args)
+
 }
